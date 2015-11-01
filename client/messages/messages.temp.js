@@ -5,12 +5,12 @@ function messages() {
 
 function time(time) {
   return moment(time).format("HH:mm:ss");
-
+}
 
   Template.messages.helpers({
 
+    time: time,
+
     messages: messages
 
-  })
-
-}
+  });
