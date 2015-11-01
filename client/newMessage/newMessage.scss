@@ -1,0 +1,23 @@
+
+@import '../variables';
+@import '../mixins/input.mixin';
+input[type=text] {
+  width: 100%;
+  @include input;
+  margin: 0.2em 0;
+}
+.info {
+  float: right;
+}
+form:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+button {
+  @include button;
+  padding: $newMessageVerticalPadding 1.9em;
+  font-size: 1.2em;
+  margin: 0;
+}
+}

@@ -5,9 +5,8 @@ function createMessage(event) {
   });
   event.target.message.value = '';
   return false;
-
+}
 
   Template.newMessage.events({
     "submit form": createMessage
   })
-}
